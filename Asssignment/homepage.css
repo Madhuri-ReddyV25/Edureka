@@ -75,7 +75,9 @@
     border-radius: 3px;
     opacity: 1;
 }
-
+.dropdown {
+    display:none;
+}
 .filter-options {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
@@ -270,7 +272,6 @@
 .margin-left {
     margin-left: 7%
 }
-
 .pagination {
     display: inline-block;
     margin-left: 275px;
@@ -295,7 +296,7 @@
     .header {
         display:fixed;
         transform:translateX(-3.5%) translateY(-10%);
-        width: 419px;
+        width: 420px;
         height: 65px;
         background: #CE0505 0% 0% no-repeat padding-box;
         opacity: 1;
@@ -366,17 +367,55 @@
         border-radius: 3px;
         opacity: 1;
     }
-    
+    .dropdown {
+        display:flex;
+        top: 131px;
+        width: 385px;
+        height: 53px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 3px #0000001A;
+        border: 1px solid #E0E0E0;
+        opacity: 1;
+    }
+    #ddlfilters {
+        text-align: left;
+        padding-left:10px;
+        font: normal normal 600 20px/25px Poppins;
+        letter-spacing: 0px;
+        color: #192F60;
+        opacity: 1;
+    }
     .filter-options {
         display:none;
+        position:fixed;
     }
     
     .filter-heading {
         display:none;
+        position:fixed;
+        top: 208px;
+        left: 46px;
+        width: 55px;
+        height: 25px;
+        text-align: left;
+        font: normal normal 600 18px/27px Poppins;
+        letter-spacing: 0px;
+        color: #192F60;
+        opacity: 1;
     }
     
     .Select-Location {
         display:none;
+        position:fixed;
+        top: 243px;
+        left: 47px;
+        width: 106px;
+        height: 20px;
+        text-align: left;
+        font: normal normal normal 14px/21px Poppins;
+        letter-spacing: 0px;
+        color: #192F60;
+        opacity: 1;
     }
     .active {
         top: 953px;
@@ -391,10 +430,28 @@
     }
     .Rectangle-2236 {
         display:none;
+        position:fixed;
+        top: 274px;
+        left: 47px;
+        width: 208px;
+        height: 35px;
+        border: 1px solid #8C96AB;
+        border-radius: 3px;
+        opacity: 1;
     }
     
     .Cuisine {
         display:none;
+        position:fixed;
+        top: 331px;
+        left: 47px;
+        width: 52px;
+        height: 20px;
+        text-align: left;
+        font: normal normal normal 14px/21px Poppins;
+        letter-spacing: 0px;
+        color: #192F60;
+        opacity: 1;
     }
     .img {
         top: 233px;
@@ -409,12 +466,38 @@
     }
     .checkbox-items {
         display:none;
+        position:fixed;
+        top: 366px;
+        left: 76px;
+        width: 86px;
+        height: 20px;
+        text-align: left;
+        font: normal normal normal 14px/21px Poppins;
+        letter-spacing: 0px;
+        color: #8C96AB;
+        opacity: 1;
     }
     .checkbox-custom {
         display:none;
+        position:fixed;
+        top: 366px;
+        left: 47px;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #3A5075;
+        border-radius: 2px;
+        opacity: 1;
     }
     .radio-custom {
         display:none;
+        position:fixed;
+        top: 575px;
+        left: 47px;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #3A5075;
+        border-radius: 9px;
+        opacity: 1;
     }
     
     .Item {
@@ -424,7 +507,7 @@
         width: 420px;
         margin-left:0px;
         height: 224px;
-        transform:translateX(-3.5%);
+        transform:translateX(-3.5%) translateY(-20%);
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 0px 3px 6px #00000029;
         opacity: 1;
@@ -488,6 +571,14 @@
     
     .small {
         display:none;
+        position:fixed;
+        top: 191px;
+        left: 20px;
+        width: 382px;
+        height: 749px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        opacity: 1;
     }
     
     .big-item {
@@ -508,12 +599,10 @@
         margin-left: 7%;
         margin-top:20px;
     }
-    
     .pagination {
         position:absolute;
         top: 948px;
         left: 60px;
-        bottom:47px;
         margin-left:20px;
         width: 300px;
         height: 32px;
